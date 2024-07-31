@@ -1188,3 +1188,27 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.portfolio-card{
+  background-color: #2621214a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  filter: drop-shadow(
+  1px 2px 4px hsl(220deg 60% 50%)
+);
+  padding-bottom: 15px;
+  margin-bottom:15px;
+}

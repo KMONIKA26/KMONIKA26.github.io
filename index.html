@@ -50,6 +50,7 @@
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#portfolio">Projects</a></li>
@@ -59,12 +60,12 @@
       </nav><!-- .navbar -->
 
       <div class="social-links">
-        <a href="https://x.com/KMonika442728" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/k-monika-263030229/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/monikarao_26/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/KMONIKA26" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100011708870137" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://youtube.com/@code_from_0?si=8wyxtJqBUpYAWbet" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://x.com/KMonika442728" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/k-monika-263030229/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/monikarao_26/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/KMONIKA26" class="github" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100011708870137" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com/@code_from_0?si=8wyxtJqBUpYAWbet" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
       </div>
 
     </div>
@@ -157,6 +158,9 @@
 
     </div><!-- End Counts -->
 
+  </section><!-- End About Section -->
+
+  <section id="skills" class="skills">
     <!-- ======= Skills  ======= -->
     <div class="skills container">
 
@@ -476,16 +480,18 @@
       </div>
 
     </div><!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
+  </section>
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container">
 
       <div class="section-title">
         <h2>Resume</h2>
-        <p>Check My Resume</p>
+        <p>Check My Resume 
+          <a href = "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" Download = "test_image">
+             <button type = "button" style="color: #fff; background-color: #18d26e;"> <i class="bi bi-download"></i> </button>
+          </a>
+        </p>
       </div>
 
       <div class="row">
@@ -627,22 +633,15 @@
         <h2>Statistisc</h2>
         <p>Github statistics</p>
 
-        <div id="github-activity">
+        <div class="flex-container">
           <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=KMONIKA26&theme=dark&border_radius=5&type=png" alt="GitHub Streak" /></a>
-        </div>
-
-        <div id="github-activity">
           <a href="https://github.com/KMONIKA26/github-readme-stats">
-            <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=KMONIKA26&theme=dark&show_icons=true" />
+            <img height=200 align="center" style="margin-left: 15px;" src="https://github-readme-stats.vercel.app/api?username=KMONIKA26&theme=dark&show_icons=true" />
           </a>
         </div>
-        
-        <div id="github-activity">
-          <a href="https://github.com/KMONIKA26/convoychat">
-            <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
-          </a>
-        </div>
-      </div>
+        <a href="https://github.com/KMONIKA26/convoychat" >
+          <img height=200 align="center" style="width:100%; margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+        </a>
 
       <div id="github-activity">
         <script>
@@ -664,155 +663,106 @@
   </section><!-- End Services Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
-      </div>
-
       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
-
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+          </div>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+          </div>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+          </div>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+          </div>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container portfolio-card">
+          <div style="flex-grow: 4">
+            <img height=200 align="center" style="margin-top: 15px;" src="https://github-readme-stats.vercel.app/api/top-langs?username=KMONIKA26&layout=compact&langs_count=8&card_width=320&theme=dark" />
+          </div>
+          <div style="flex-grow: 4">
+            <h2>Title Hare</h2>
+            <p>Description here</p>
+            <div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
   </section><!-- End Portfolio Section -->
 

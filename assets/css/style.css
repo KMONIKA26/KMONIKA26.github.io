@@ -350,6 +350,7 @@ section {
   opacity: 0;
   transition: ease-in-out 0.4s;
   z-index: 2;
+  
 }
 
 section.section-show {
@@ -403,6 +404,17 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# page
+--------------------------------------------------------------*/
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
 }
 
 /*--------------------------------------------------------------

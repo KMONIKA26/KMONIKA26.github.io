@@ -343,7 +343,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 140px;
   bottom: 100%;

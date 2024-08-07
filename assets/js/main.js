@@ -5,7 +5,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
 (function() {
   "use strict";
 
@@ -13,128 +12,100 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(el)];
     } else {
-      return document.querySelector(el)
+      return document.querySelector(el);
     }
-  }
+  };
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    let selectEl = select(el, all);
 
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach(e => e.addEventListener(type, listener));
       } else {
-        selectEl.addEventListener(type, listener)
+        selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
   /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
     window.scrollTo({
-      top: 0,
+      top: el.offsetTop,
       behavior: 'smooth'
-    })
-  }
+    });
+  };
 
   /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+    select('#navbar').classList.toggle('navbar-mobile');
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
   on('click', '#navbar .nav-link', function(e) {
-    let section = select(this.hash)
+    let section = select(this.hash);
     if (section) {
-      e.preventDefault()
+      e.preventDefault();
 
-      let navbar = select('#navbar')
-      let header = select('#header')
-      let sections = select('section', true)
-      let navlinks = select('#navbar .nav-link', true)
+      let navbar = select('#navbar');
+      let header = select('#header');
+      let sections = select('section', true);
+      let navlinks = select('#navbar .nav-link', true);
 
       navlinks.forEach((item) => {
-        item.classList.remove('active')
-      })
+        item.classList.remove('active');
+      });
 
-      this.classList.add('active')
+      this.classList.add('active');
 
       if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbar.classList.remove('navbar-mobile');
+        let navbarToggle = select('.mobile-nav-toggle');
+        navbarToggle.classList.toggle('bi-list');
+        navbarToggle.classList.toggle('bi-x');
       }
 
-      if (this.hash == '#header') {
-        header.classList.remove('header-top')
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        return;
-      }
-
-      if (!header.classList.contains('header-top')) {
-        header.classList.add('header-top')
-        setTimeout(function() {
-          sections.forEach((item) => {
-            item.classList.remove('section-show')
-          })
-          section.classList.add('section-show')
-
-        }, 350);
+      if (this.hash === '#header') {
+        header.classList.remove('header-top');
       } else {
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        section.classList.add('section-show')
+        if (!header.classList.contains('header-top')) {
+          header.classList.add('header-top');
+        }
       }
 
-      scrollto(this.hash)
+      // Scroll to the section
+      scrollto(section);
     }
-  }, true)
+  }, true);
 
   /**
-   * Activate/show sections on load with hash links
+   * Show all sections on load
    */
   window.addEventListener('load', () => {
+    let sections = select('section', true);
+    sections.forEach((section) => {
+      section.classList.add('section-show');
+    });
+
     if (window.location.hash) {
-      let initial_nav = select(window.location.hash)
-
+      let initial_nav = select(window.location.hash);
       if (initial_nav) {
-        let header = select('#header')
-        let navlinks = select('#navbar .nav-link', true)
-
-        header.classList.add('header-top')
-
-        navlinks.forEach((item) => {
-          if (item.getAttribute('href') == window.location.hash) {
-            item.classList.add('active')
-          } else {
-            item.classList.remove('active')
-          }
-        })
-
-        setTimeout(function() {
-          initial_nav.classList.add('section-show')
-        }, 350);
-
-        scrollto(window.location.hash)
+        scrollto(initial_nav);
       }
     }
   });
@@ -142,18 +113,18 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  let skillsContent = select('.skills-content');
+  if (skillsContent) {
     new Waypoint({
-      element: skilsContent,
+      element: skillsContent,
       offset: '80%',
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
         });
       }
-    })
+    });
   }
 
   /**
@@ -177,7 +148,6 @@
         slidesPerView: 1,
         spaceBetween: 20
       },
-
       1200: {
         slidesPerView: 3,
         spaceBetween: 20
@@ -186,7 +156,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Portfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -210,7 +180,6 @@
         });
       }, true);
     }
-
   });
 
   /**
@@ -251,5 +220,4 @@
    */
   new PureCounter();
 
-})()
-
+})();
